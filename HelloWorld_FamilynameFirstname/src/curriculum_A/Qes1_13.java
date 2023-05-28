@@ -33,7 +33,7 @@ public class Qes1_13 {
         myLong = 10000L;
         
         // 単精度浮動小数点数型を宣言
-        float floatnum;
+        float floatnum; 
         
         // 単精度浮動小数点数型に代入
         floatnum = 9.5f;
@@ -77,8 +77,10 @@ public class Qes1_13 {
         int sum1 = myByte + myByte;
         System.out.println(sum1);
         
-        // 変数を足し合わせてa ハロー true（間に半角スペース）とコンソールに出力
+        // 変数を足し合わせる
         String result = String.valueOf(myChar) + " " + myString + " " + String.valueOf(myBoolean);
+        
+        // a ハロー true（間に半角スペース）とコンソールに出力
         System.out.println(result);
         
         // sumとsum1を足して11130とコンソールに出力
@@ -89,19 +91,19 @@ public class Qes1_13 {
         long result1 = (long)myByte * (long)myShort * (long)myInt * (long)myLong;
         System.out.println(result1);
         
-        // 10.5割る100をする
+        // 10.5割る100をし、コンソールに出力
         double result2 = doublenum / myShort;
         System.out.println(result2);
         
-        // 10引く100をする
+        // 10引く100をし、コンソールに出力
         int result3 = myByte - myShort;
         System.out.println(result3);
         
 	    // 空の行で設問の答えを区切る
 	    System.out.println(); 
         
-        /*問5 次のプログラムを実行すると「ハローJAVA2023」という結果が表示されます。
-        「ハローJAVA43」と表示とさせたいのですが、意図通りに動きません。正しく動作するように修正してください。*/
+        /* 問5 次のプログラムを実行すると「ハローJAVA2023」という結果が表示されます
+        「ハローJAVA43」と表示とさせたいのですが、意図通りに動きません。正しく動作するように修正してください */
        
 	    // "20"を20に修正して整数型にした
 	    int num = 20;
@@ -111,7 +113,7 @@ public class Qes1_13 {
 	    // 空の行で設問の答えを区切る
 	    System.out.println(); 
         
-        /*問6『』で囲われた人の情報を変数にして、formatの通りコンソールに出力してください
+        /* 問6『』で囲われた人の情報を変数にして、formatの通りコンソールに出力してください
         ローカル変数に代入し○○に入れてください『山田太郎 18歳 170.5cm 62.2kg 寿司』*/
         
         // 名前を宣言し代入
@@ -130,7 +132,7 @@ public class Qes1_13 {
         String favoriteFood = "寿司";
         
         /* フォーマットに従って出力
-         printlnではフォーマットに代入する記述ができなかったため、printfで改行時に\r\nを使用*/
+         printlnではフォーマットに代入する記述ができなかったため、printfで改行時に\r\nを使用 */
         System.out.printf("「初めまして%sです」"
         		+ "\r\n「年齢は%d歳です」"
         		+ "\r\n「身長は%.1fcmです」"
@@ -138,9 +140,9 @@ public class Qes1_13 {
         		+ "\r\n「好きな食べ物は%sです」"
         		, name, age, height, weight, favoriteFood);
         
-        /*問7 問6で作成した自己紹介に続いてBMIが出力されるようにしてください*/
+        /* 問7 問6で作成した自己紹介に続いてBMIが出力されるようにしてください */
         
-        //BMI = 体重(Kg) × (身長(m))2 
+        // BMI = 体重(Kg) × (身長(m))2 
         double bmi = weight / ((height / 100) * (height / 100));
         
         // BMIを出力、文字列に変換してBMI値を少数第一位に丸める
@@ -149,7 +151,7 @@ public class Qes1_13 {
 	    // 空の行で設問の答えを区切る
 	    System.out.println(); 
         
-        /*問8 問6で宣言した変数に再代入し下記の通りコンソールに出力してください
+        /* 問8 問6で宣言した変数に再代入し下記の通りコンソールに出力してください
 		　初めまして鈴木一郎です
 		　年齢は24歳です
 		　身長168.5cmです
@@ -188,7 +190,7 @@ public class Qes1_13 {
 	    // 空の行で設問の答えを区切る
 	    System.out.println(); 
         
-        /*問9 問8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、
+        /* 問9 問8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、
           下記の通りコンソールに出力してください
  		　初めまして鈴木一郎です
 		　年齢は48歳です
@@ -220,18 +222,19 @@ public class Qes1_13 {
 	    // 空の行で設問の答えを区切る
 	    System.out.println(); 
         
-	    /*問10　問8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。
+	    /* 問10　問8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。
         ただしif文は使いません*/
         
         // boolean型は、条件判定・真偽値を扱う場面で使用される
         boolean ageOver25 = age >= 25;
+        
         // trueとコンソール出力、\nで改行
 	    System.out.println("\n" + ageOver25);
         
 	    // 空の行で設問の答えを区切る
 	    System.out.println(); 
 	    
-        /*問11 問8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください  */
+        /*問11 問8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください */
         
 	    // 文字列型に変換するString.valueof（）はさまざまなデータ型に対応
 	    
@@ -259,7 +262,7 @@ public class Qes1_13 {
 	    // 空の行で設問の答えを区切る
 	    System.out.println(); 
 	    
-        /*問12 問11で変換した【年齢・身長】を整数型に変換して出力してください  */      
+        /* 問12 問11で変換した【年齢・身長】を整数型に変換して出力してください  */      
 	    
 	    // 年齢の文字列型を整数型に変換
 	    int ageInt = Integer.valueOf(ageString);
@@ -276,8 +279,8 @@ public class Qes1_13 {
 	    // 空の行で設問の答えを区切る
 	    System.out.println(); 
 
-        /*問13 問12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力してください
- 		 ただしif文は使わないでください*/
+        /* 問13 問12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力してください
+ 		 ただしif文は使わないでください */
         
 	    // 年齢が25以上もしくは身長が160以上であればtrueを出力
 	    System.out.println("年齢が25以上もしくは身長が160以上: " 
