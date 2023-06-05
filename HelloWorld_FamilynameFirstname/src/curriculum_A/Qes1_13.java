@@ -269,15 +269,17 @@ public class Qes1_13 {
         問12 問11で変換した【年齢・身長】を整数型に変換して出力してください  
         */      
 	    
+	    
 	    // 年齢の文字列型を整数型に変換
 	    int ageInt = Integer.valueOf(ageString);
 
 	    // 身長の文字列型を整数型に変換
-	    int heightInt = Integer.valueOf(heightString);
+	    int heightInt = Integer.parseInt(heightString);
 
 	    // 整数型に変換した年齢と身長を出力
 	    System.out.println(ageInt + "\n" + heightInt + "\n");
-        
+
+	 
         /* 
         問13 問12で変換した【年齢・身長】で
         【年齢が25もしくは身長が160以上】であればtrueを出力してください
