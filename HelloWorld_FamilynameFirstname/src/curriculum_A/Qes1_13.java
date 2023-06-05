@@ -273,7 +273,7 @@ public class Qes1_13 {
 	    // 年齢の文字列型を整数型に変換
 	    int ageInt = Integer.valueOf(ageString);
 
-	    // 身長の文字列型を整数型に変換
+	    // 身長の文字列型を整数型に変換 ×××
 	    int heightInt = Integer.parseInt(heightString);
 
 	    // 整数型に変換した年齢と身長を出力
